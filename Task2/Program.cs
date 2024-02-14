@@ -5,19 +5,19 @@
     Указание: Метод строки ToCharArray() не использовать.
 */
 
-string str = "Hello!!!";
-char[] MakeCharsArray(string str)
+string strPr = "Hello!!! My World!!!"; // переменная строки str принимает слово Hello!!!
+char[] makeCharsArray(string strPr) //Функция создания массива из строки
 {
-    int size = str.Length;
-    char[] word = new char[size];
-    for (int i = 0; i < str.Length; i++)
+    int size = strPr.Length; // Создаем переменную определяющюю количество элементов массива .Length - подсчет символов
+    char[] word = new char[size]; // создаем локальную массив на определенное кол - во символов
+    for (int i = 0; i < strPr.Length; i++) // Перебераем массив по символьно
     {
-        word[i] = str[i];
+        word[i] = strPr[i]; // собераем массив в локальной переменной массива
     }
-    return word;
+    return word; // Возвращаем из функции полученный массив
 }
-char[] word = MakeCharsArray(str);
-foreach (char e in word)
+char[] words = makeCharsArray(strPr: strPr);
+foreach (char e in words) // Перебираем форычем массив words для вывода символов массива
 {
-    System.Console.Write($"{e} ");
+    System.Console.Write($"{e} "); // Выводим символы массива
 }
