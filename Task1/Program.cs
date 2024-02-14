@@ -6,17 +6,17 @@
     Пример:
     [‘a’, ‘b’, ‘c’, ‘d’] => “abcd”
 */
-char[] chars = { 'a', 'b', 'c', 'd' };
+char[] chars = { 'a', 'b', 'c', 'd' }; // Создаем массив символов
 
-string PrString(char[] chars)
+string PrString(char[] chars) // Функция передает массив символов и преобразует их в строку
 {
-    string sim = "";
-    foreach (char e in chars)
+    string sim = ""; // Переменная принимающаа символы и превращающая их в строку
+    foreach (char e in chars) // форычем пробегаем по массиву chars 
     {
-        sim = sim + e;
+        sim += e; //Плюсуем все символы в переменную
     }
-    return sim;
+    return sim; // Возвращаем все символы как строку
 
 }
-string sim = PrString(chars);
+string sim = PrString(chars); // 
 System.Console.WriteLine(value: sim);
