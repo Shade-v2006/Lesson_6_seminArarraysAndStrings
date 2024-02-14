@@ -19,4 +19,4 @@ string PrString(char[] chars) // Функция передает массив с
 
 }
 string sim = PrString(chars); // 
-System.Console.WriteLine(value: sim);
+System.Console.WriteLine(value: sim); // Функция выводит строку на печать
